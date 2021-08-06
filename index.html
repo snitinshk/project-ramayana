@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Ramayan Anand</title>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href="css/media-style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/venobox.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.backgroundvideo.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/venobox.js"></script>
+<script>
+  $(function(){
+	if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+	  $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+	} else {
+	  $(window).resize(function(){
+		var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+		$('.parallax-container').height(parallaxHeight);
+	  }).trigger('resize');
+	}
+  });
+</script>
+<script src="js/parallax.min.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+</head>
+
+<body>
+<div class="wrapper clearfix"> 
+  <!-- Right Panel Button Design -->
+  <div class="side-overlay"></div>
+  <div class="right-panel-design clearfix">
+    <div class="close-wrap clearfix">
+      <div class="close-btn"><img src="images/close-btn.png" /></div>
+    </div>
+    <ul class="navigation clearfix">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="parallax-container video-wrap" data-image-src="images/video_img.jpg" data-parallax="scroll" data-position="top" data-bleed="10">
+   <!-- Toggle Nav -->
+    <div class="toggle-nav"> <span></span> </div>
+    <!-- Toggle Nav End -->
+    <video autoplay muted loop poster="images/video_img.jpg" id="bgvid">
+      <source src="media/movieaa.mp4" type="video/mp4">
+      <source src="media/movieaa.webm" type="video/webm">
+    </video>
+    <div class="first-wrap-content clearfix">
+      <div class="inside-wrap clearfix">
+        <h2>Welcome to</h2>
+        <span class="samarkanf up-head clearfix">Sacr3D Music</span>
+        <p class="welcome-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+      </div>
+    </div>
+    <!-- Slide Arrow --> 
+    <a href="#second-slide" class="dwn-arrow"></a> 
+    <!-- Slide Arrow End -->  </div>
+  
+  <!-- Right Panel Button Design -->  
+  <div id="second-slide" class="parallax-container eighth" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img1.jpg">
+    <div class="about-content clearfix">
+      <h2 class="samarkanf about-us clearfix"><span>About</span> Sacr3d</h2>
+      <p>I am here to be a bridge builder and a weaver, and to redefine what Sacr3d music means in our modern age. To fuse devotional poetry, kirtan and ancient mantras with hip hop, beatboxing, fat bass lines and danceable tunes. To bring people into a state of ecstasy and devotion pointing towards the source of existence through ALL forms of expression.</p>
+    </div>
+  </div>
+  <div class="parallax-container fourteenh" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img2.jpg">
+    <div class="our-videos clearfix">
+      <div class="the-truth clearfix"><img src="images/logo_img.png" /></div>
+      <span class="the-truth-subtext clearfix">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire,</span>
+      <div class="videos-wrap clearfix">
+        <div class="video-only fl clearfix"> <img src="images/video_img1.jpg" /> <a data-type="youtube" class="videogal" href="https://www.youtube.com/embed/rLyYyDB_DpU"><img src="images/play_ico.png" /></a> </div>
+        <div class="video-text fr clearfix">
+          <h2>Monsantrocity</h2>
+          <p>In 2013 1 week before the first March Against Monsanto, Swami G received inspiration while in a plane terminal from San Francisco to Vancouver to write a song about the horror’s GMO’s and Monsanto has perpetrated upon the world. Along with Brook Lotzkar, he shot and produced the video in 3 sleepless nights, and released it to the world. It got 50,000 views in its first week!</p>
+        </div>
+      </div>
+      <div class="videos-wrap clearfix">
+        <div class="video-only fr clearfix"> <img src="images/video_img2.jpg" /> <a class="videogal" data-type="youtube" href="https://www.youtube.com/embed/rLyYyDB_DpU"><img src="images/play_ico.png" /></a> </div>
+        <div class="video-text fl clearfix">
+          <h2>Don't Eat It!</h2>
+          <p>This is the second video produced in response to Monsanto and in support of global initiatives to RESIST GMO's. This time we wanted to get creative, cool and funky GMO Executives Have Taken Over the Food Chain, a group of dedicated citizens march to face them off in an epic battle, but something nefarious and unexpected happens.... Swami G releases his second music video for the Anti-GMO movement taking inspiration from Michael Jackson and Wierd Al.. Beat It becomes DONT EAT IT! Swami G releases his second music video for the Anti-GMO movement taking inspiration from Michael Jackson and Wierd Al.. Beat It becomes DONT EAT IT!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container sevenh" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img3.jpg"></div>
+  <div class="parallax-container fiveh" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img4.jpg">
+    <div class="simpltext future-text clearfix">Ancient Future’s is the first major initiative taken by Sacr3d to fuse ancient mantra’s with modern music, explaining their meaning through Hip Hop verses. Enjoy these Sacr3d Vibrations and spread them with the world</div>
+  </div>
+  <div class="parallax-container sevenh" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img5.jpg">
+    <div class="mantra-wrap clearfix">
+      <h2 class="samarkanf clearfix">gayatri <span>mantra</span></h2>
+      <p>ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं । <span>भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात् ॥</span></p>
+    </div>
+  </div>
+  <div class="parallax-container sixh" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img6.jpg">
+    <div class="simpltext future-text clearfix">
+      <p>Gayatri Mantra is the first mantra that is taught to Yogi’s, and is whispered in the child’s ear when he is born. It is the Mantra honouring the sun as the source of all life, and the source of the sun itself. It calls upon the energies of creation and asks to become like that; may we shine our light like the sun and serve all reality</p>
+      <div class="music-player">
+        <iframe width="100%" height="115px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/51540991&amp;color=ff5500&amp;theme_color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
+        <!--<img src="images/music_img.png" />--></div>
+    </div>
+  </div>
+  <div class="parallax-container eighth" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img7.jpg">
+    <div class="naga-rasta clearfix">
+      <h2 class="samarkanf clearfix">Naga Rasta</h2>
+      <span>“The more you meditate the more YOU realise jah!”</span></div>
+  </div>
+  <div class="parallax-container sixh" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img6.jpg">
+    <div class="simpltext future-text clearfix">
+      <p>Many people know of the Rastafari’s popularised through Bob Marley, yet few know about their mystical origins. The wearing of dreadlocks and the smoking of ‘Ganja’ came from the Naga Ascetics in India who renounced all material possessions and wandered the land, wearing dreadlocks and smoking Ganja from the river Ganga to connect with god. These Naga’s came to Jamaica in the 18th century and the rest is history</p>
+      <div class="music-player">
+        <iframe width="100%" height="115px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/156093381&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <!--<img src="images/music_img.png" />--></div>
+    </div>
+  </div>
+  <div class="parallax-container eighth" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img8.jpg">
+    <h2 class="samarkanf shive-text clearfix">shiva <span>shankara</span></h2>
+  </div>
+  <div class="parallax-container sixh" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img6.jpg">
+    <div class="simpltext future-text clearfix">
+      <p>Shiva, one of the most mystical and profound beings and Indian Cosmology. Some worship Shiva as the pure consciousness underlying all creation, some see him as the destructive force of nature. Some worship him as Nata-Raja, the dancing king who plays his drums and sets the rhythm of reality in place, some see him as the ultimate yogi and the destroyer of ego. Here, we honour Shiva and give you a taste of his nectar</p>
+      <div class="music-player">
+        <iframe width="100%" height="115px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/156093381&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <!--<img src="images/music_img.png" />--></div>
+    </div>
+  </div>
+  <div class="parallax-container footerh" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/img9.jpg">
+    <div class="gallery-wrap clearfix">
+      <div class="gallery-sl fl clearfix">
+        <h2>gallery</h2>
+        <ul class="gallery-list venobox clearfix">
+          <li><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_1.jpg" /></a></li>
+          <li><a data-gall="myGallery" href="images/img1.jpg"><img src="images/gl_2.jpg" /></a></li>
+          <li><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_3.jpg" /></a></li>
+          <li><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_4.jpg" /></a></li>
+          <li><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_5.jpg" /></a></li>
+          <li><a data-gall="myGallery" href="images/img7.jpg"><img src="images/gl_6.jpg" /></a></li>
+          <li><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_1.jpg" /></a></li>
+          <li><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_2.jpg" /></a></li>
+          <li><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_3.jpg" /></a></li>
+          <li class="bot-mrg"><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_4.jpg" /></a></li>
+          <li class="bot-mrg"><a data-gall="myGallery" href="images/gall.jpg"><img src="images/gl_5.jpg" /></a></li>
+          <li class="bot-mrg"><a data-gall="myGallery" href="images/img7.jpg"><img src="images/gl_6.jpg" /></a></li>
+        </ul>
+      </div>
+      <div class="gallery-sl fr clearfix">
+        <h2>Events</h2>
+        <ul class="event-list clearfix">
+          <li><a href="#"><img src="images/ev_1.jpg" />
+            <div class="date-wrap">15 <span>March</span></div>
+            </a>
+            <div class="full-wrap event-text clearfix"> <a href="#">DONT EAT IT!</a>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+          </li>
+          <li> <a href="#"><img src="images/ev_2.jpg" />
+            <div class="date-wrap">15 <span>March</span></div>
+            </a>
+            <div class="full-wrap event-text clearfix"> <a href="#">Monsantrocity</a>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+          </li>
+          <li><a href="#"><img src="images/ev_1.jpg" />
+            <div class="date-wrap">15 <span>March</span></div>
+            </a>
+            <div class="full-wrap event-text clearfix"> <a href="#">DONT EAT IT!</a>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+          </li>
+          <li> <a href="#"><img src="images/ev_2.jpg" />
+            <div class="date-wrap">15 <span>March</span></div>
+            </a>
+            <div class="full-wrap event-text clearfix"> <a href="#">Monsantrocity</a>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright"><span>copyright&copy;swamig.co.</span></div>
+  </div>
+</div>
+</body>
+</html>

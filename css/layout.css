@@ -1,0 +1,701 @@
+/* ------ Table of Content ------
+1. Reset
+2. Clearing Floats
+3. HTML 5 element
+4. Typography
+5. Basic Layout
+6. Pages
+7. All Hack
+8. Font Icons
+*/
+
+/* 4. Typography
+***************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+/*font-family: 'Roboto Condensed', sans-serif;*/
+
+@font-face {
+	font-family: 'edo_szregular';
+	src: url('../fonts/edosz-webfont.eot');
+	src: url('../fonts/edosz-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/edosz-webfont.woff2') format('woff2'), url('../fonts/edosz-webfont.woff') format('woff'), url('../fonts/edosz-webfont.ttf') format('truetype'), url('../fonts/edosz-webfont.svg#edo_szregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'bebas_neue_regularregular';
+	src: url('../fonts/bebasneue_regular-webfont.eot');
+	src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'), url('../fonts/bebasneue_regular-webfont.woff') format('woff'), url('../fonts/bebasneue_regular-webfont.ttf') format('truetype'), url('../fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'samarkannormal';
+	src: url('../fonts/samarn__-webfont.eot');
+	src: url('../fonts/samarn__-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/samarn__-webfont.woff2') format('woff2'), url('../fonts/samarn__-webfont.woff') format('woff'), url('../fonts/samarn__-webfont.ttf') format('truetype'), url('../fonts/samarn__-webfont.svg#samarkannormal') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AgencyFB-Reg';
+	src: url('../fonts/AgencyFB-Reg_gdi.eot');
+	src: url('../fonts/AgencyFB-Reg_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/AgencyFB-Reg_gdi.woff') format('woff'), url('../fonts/AgencyFB-Reg_gdi.ttf') format('truetype'), url('../fonts/AgencyFB-Reg_gdi.svg#AgencyFB-Reg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: condensed;
+ unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family: 'bebas_neuebook';
+	src: url('../fonts/bebasneue_book-webfont.eot');
+	src: url('../fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebasneue_book-webfont.woff2') format('woff2'), url('../fonts/bebasneue_book-webfont.woff') format('woff'), url('../fonts/bebasneue_book-webfont.ttf') format('truetype'), url('../fonts/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Mangal-Regular';
+	src: url('../fonts/Mangal_gdi.eot');
+	src: url('../fonts/Mangal_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/Mangal_gdi.woff') format('woff'), url('../fonts/Mangal_gdi.ttf') format('truetype'), url('../fonts/Mangal_gdi.svg#Mangal-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+ unicode-range: U+000D-2212;
+}
+/* 1. Reset
+***************************************************************/
+* {
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, span, strike, strong, sub, sup, tt, var, b, u, i, center, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, fieldset, {
+margin:0px auto;
+padding:0px;
+border:0;
+outline:0;
+font-size:100%;
+}
+a, img a {
+	text-decoration: none;
+	border: 0;
+	outline: 0 !important;
+}
+a, button, input {
+}
+:focus {
+	outline: 0px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+ol, ul, li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.fa {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.desk-padd-zero {
+	padding: 0px !important;
+}
+.pad-zero {
+	padding: 0px !important;
+}
+.common-paddling {
+	padding: 50px 0;
+}
+.common-paddling2 {
+	padding: 60px 0;
+}
+.full-wrap {
+	position: relative;
+	overflow: hidden;
+}
+.mrg-bott-fourty {
+	margin-bottom: 40px !important;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/* 2. Clearing Floats
+***************************************************************/
+.clear {
+	clear: both;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+/* 3. HTML 5 element
+***************************************************************/
+
+aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, article {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background: #ffffff;
+	font-size: 0.875em;
+	color: #fff;
+}
+input[type="text"], textarea {
+	box-shadow: 1px 1px 1px rgb(204, 204, 204) inset;
+	-moz-box-shadow: 1px 1px 1px rgb(204, 204, 204) inset;
+	-ms-box-shadow: 1px 1px 1px rgb(204, 204, 204) inset;
+	-o-box-shadow: 1px 1px 1px rgb(204, 204, 204) inset;
+	-webkit-box-shadow: 1px 1px 1px rgb(204, 204, 204) inset;
+	border-radius: 2px;
+	margin: 0 0 20px;
+	padding: 6px 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+	transition: all ease-in .3s;
+	-moz-transition: all ease-in .3s;
+	-ms-transition: all ease-in .3s;
+	-o-transition: all ease-in .3s;
+	-webkit-transition: all ease-in .3s;
+}
+input[type="text"]:hover, textarea:hover {
+	border-color: #5cace5;
+}
+input[type="text"]:focus, textarea:focus {
+	border-color: #5cace5;
+	box-shadow: 0 0 3px #5cace5 !important;
+	-moz-box-shadow: 0 0 3px #5cace5 !important;
+	-ms-box-shadow: 0 0 3px #5cace5 !important;
+	-o-box-shadow: 0 0 3px #5cace5 !important;
+	-webkit-box-shadow: 0 0 3px #5cace5 !important;
+}
+/* 5. Basic Layout
+***************************************************************/
+.parallax-container {
+	min-height: 400px;
+	background: transparent;
+	position: relative;
+}
+.video-wrap {
+	height: 100vh !important;
+}
+.eighth {
+	height: 800px !important;
+}
+.fourteenh {
+	height: 1602px !important;
+	background-position: bottom right !important;
+}
+.sevenh {
+	height: 792px !important;
+}
+.fiveh {
+	height: 557px !important;
+}
+.sixh {
+	height: 650px !important;
+}
+.footerh {
+	height: 635px !important;
+	padding: 0 0 40px;
+}
+.toggle-nav {
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	border: 2px solid #fff;
+	width: 57px;
+	height: 57px;
+	cursor: pointer;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+.toggle-nav span {
+	background: #fff;
+	height: 3px;
+	left: 50%;
+	margin: -1.5px 0 0 -13px;
+	position: absolute;
+	top: 50%;
+	width: 26px;
+}
+.toggle-nav span:before {
+	background: #fff;
+	height: 3px;
+	left: 0;
+	position: absolute;
+	top: -8px;
+	width: 26px;
+	content: '';
+}
+.toggle-nav span:after {
+	background: #fff;
+	height: 3px;
+	left: 0;
+	position: absolute;
+	bottom: -8px;
+	width: 26px;
+	content: '';
+}
+.toggle-nav:hover {
+	background: #fff;
+}
+.toggle-nav:hover span, .toggle-nav:hover span:before, .toggle-nav:hover span:after {
+	background: #333;
+}
+.dwn-arrow {
+	width: 24px;
+	height: 14px;
+	background: url(../images/down_arrow.png) no-repeat;
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	margin: 0 0 0 -12px;
+	animation: droparrow ease 1.3s infinite;
+	-webkit-animation: droparrow ease 1.3s infinite;
+}
+ @keyframes droparrow {
+ 0% {
+bottom:48px;
+}
+12% {
+bottom:46px;
+}
+25% {
+bottom:44px;
+}
+ 35% {
+bottom:42px;
+}
+ 50% {
+bottom:40px;
+}
+ 65% {
+bottom:43px;
+}
+ 80% {
+bottom:46px;
+}
+ 90% {
+bottom:48px;
+}
+ 100% {
+bottom:50px;
+}
+}
+@-webkit-keyframes droparrow {
+ 0% {
+bottom:48px;
+}
+12% {
+bottom:46px;
+}
+25% {
+bottom:44px;
+}
+ 35% {
+bottom:42px;
+}
+ 50% {
+bottom:40px;
+}
+ 65% {
+bottom:43px;
+}
+ 80% {
+bottom:46px;
+}
+ 90% {
+bottom:48px;
+}
+ 100% {
+bottom:50px;
+}
+}
+#bgvid {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background-size: cover;
+	transition: 1s opacity;
+}
+.video-wrap:before {
+	background: rgba(0, 0, 0, 0.8);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.first-wrap-content {
+	position: absolute;
+	z-index: 9;
+	color: #fff;
+	top: 30%;
+	width: 100%;
+}
+.inside-wrap {
+	width: 70%;
+	margin: 0 auto;
+}
+.first-wrap-content h2 {
+	font-family: 'bebas_neuebook';
+	font-size: 50px;
+	font-weight: 100;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom:20px;
+}
+.samarkanf {
+	font-family: 'samarkannormal';
+}
+.up-head {
+	font-size: 136px;
+	margin: 0 0 30px;
+	display: block;
+	text-align: center;
+}
+.welcome-text {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 2.2;
+	margin: 50px auto 0;
+	text-align: center;
+	width: 80%;
+}
+.about-content {
+	float: right;
+	margin: 10% 5% 0 0;
+	width: 655px;
+	color: #fff;
+}
+.about-us {
+	font-size: 136px;
+	line-height: 0.8;
+	font-weight: normal;
+}
+.about-us span {
+	display: block;
+	font-size: 100px;
+}
+.about-content p {
+	font-family: "AgencyFB-Reg";
+	font-size: 24px;
+	line-height: 1.5;
+	margin: 40px 0 0;
+}
+.simpltext {
+	font-family: "AgencyFB-Reg";
+	font-size: 24px;
+	line-height: 1.5;
+}
+.future-text {
+	font-size: 28px;
+	line-height: 2;
+	margin: 0 auto 0;
+	text-align: center;
+	top: 50%;
+	padding-top: 160px;
+	width: 88%;
+}
+.mantra-wrap {
+	color: #df2d03;
+	margin: 0 auto;
+	padding: 60px 0 0;
+	width: 720px;
+}
+.mantra-wrap h2 {
+	font-size: 120px;
+	font-weight: normal;
+	letter-spacing: 12px;
+}
+.mantra-wrap h2 span {
+	display: block;
+	padding: 0 0 0 290px;
+}
+.mantra-wrap p {
+	font-family: "Mangal-Regular";
+	font-size: 28px;
+	padding: 0 0 0 150px;
+}
+.mantra-wrap p span {
+	display: block;
+	padding: 0 0 0 50px;
+}
+.music-player {
+	margin: 70px auto 0;
+	width: 660px;
+}
+.naga-rasta {
+	display: table;
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+}
+.naga-rasta h2 {
+	font-size: 136px;
+	font-weight: normal;
+	text-align: center;
+}
+.naga-rasta span {
+	display: block;
+	font-family: "AgencyFB-Reg";
+	font-size: 34px;
+	padding: 20px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.shive-text {
+	bottom: 10%;
+	font-size: 136px;
+	font-weight: normal;
+	left: 20%;
+	position: absolute;
+}
+.shive-text > span {
+	display: block;
+	padding: 0 0 0 180px;
+}
+.our-videos {
+	width: 1045px;
+	margin: 0 auto;
+	padding: 80px 0 0 0;
+}
+.the-truth {
+	display: table;
+	margin: 0 auto 20px;
+}
+.the-truth-subtext {
+	display: block;
+	font-family: "AgencyFB-Reg";
+	font-size: 30px;
+	line-height: 1.5;
+	padding: 10px 0 0;
+	text-align: center;
+}
+.bottom-design {
+	width: 100%;
+	height: 196px;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	background: url(../images/bottom_bg.png) no-repeat;
+}
+.videos-wrap {
+	margin: 80px 0;
+}
+.video-only {
+	position: relative;
+}
+.video-only > a {
+	left: 50%;
+	margin: -98px 0 0 -42px;
+	position: absolute;
+	top: 50%;
+}
+.video-text {
+	width: 470px;
+}
+.video-text h2 {
+	font-family: "edo_szregular";
+	font-size: 50px;
+	font-weight: normal;
+	margin: 0 0 20px;
+}
+.video-text p {
+	font-family: "AgencyFB-Reg";
+	font-size: 24px;
+	line-height: 1.5;
+	text-align: justify;
+}
+.gallery-wrap {
+	width: 90%;
+	margin: 0 auto;
+	padding: 80px 0 0;
+}
+.gallery-sl {
+	width: 46%;
+}
+.gallery-sl h2:before {
+	background: #000 none repeat scroll 0 0;
+	bottom: 7px;
+	content: "";
+	height: 1px;
+	position: absolute;
+	right: 0;
+	width: 75%;
+}
+.gallery-sl h2 {
+	color: #000;
+	font-family: "bebas_neue_regularregular";
+	font-size: 48px;
+	line-height: 1;
+	position: relative;
+}
+.gallery-list {
+	height: 400px;
+	margin: 30px -40px 0 -55px;
+	overflow-y: scroll;
+	padding: 0 20px 0 0;
+}
+.gallery-list > li {
+	float: left;
+	margin: 0 0 40px 40px;
+}
+.gallery-list > li a {
+	border: 5px solid #fff;
+	display: block;
+}
+.gallery-list > li img {
+	display: block;
+}
+.bot-mrg {
+	margin-bottom: 0px !important;
+}
+.nicescroll-rails div {
+	background: rgba(255, 255, 255, .6) !important;
+}
+.event-list {
+	height: 400px;
+	margin: 30px -20px 0 -52px;
+	padding: 0 20px 0 52px;
+}
+.event-list > li {
+	float: left;
+	margin: 0 0 40px;
+	width: 100%;
+}
+.event-list a {
+	float: left;
+	margin: 0 10px 0 0;
+	position: relative;
+}
+.event-list a img {
+	border: 5px solid #fff;
+}
+.event-list a .date-wrap {
+	background: #4f09b7;
+	color: #fff;
+	font-family: "bebas_neue_regularregular";
+	font-size: 18px;
+	left: -53px;
+	padding: 5px 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 52px;
+}
+.event-list a .date-wrap span {
+	display: block;
+	font-family: 'bebas_neuebook';
+}
+.event-text a {
+	color: #000;
+	display: table !important;
+	float: none;
+	font-family: "bebas_neue_regularregular";
+	font-size: 30px;
+	font-weight: 700;
+}
+.event-text p {
+	display: block;
+	font-family: "AgencyFB-Reg";
+	font-size: 17px;
+	line-height: 1.5;
+}
+.copyright {
+	background: rgba(255, 255, 255, 0.6);
+	bottom: 0;
+	color: #000;
+	font-family: "AgencyFB-Reg";
+	left: 0;
+	padding: 10px 0;
+	position: absolute;
+	text-align: right;
+	width: 100%;
+}
+.copyright span {
+	padding-right: 20px;
+	display: block;
+}
+.right-panel-design {
+	background: #fff;
+	height: 100%;
+	padding: 0;
+	position: fixed;
+	right: -300px;
+	top: 0;
+	width: 300px;
+	z-index: 9999;
+}
+.side-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: none;
+	height: 100%;
+	background: rgba(0, 0, 0, .8);
+	z-index: 999;
+}
+.close-btn {
+	cursor: pointer;
+	float: right;
+	margin: 10px 10px 0 0;
+	opacity: 0.5;
+}
+.close-btn:hover {
+	opacity: 0.9;
+}
+.navigation {
+	float: left;
+	margin: 8px 0 0;
+	padding: 20px 20px 0;
+	width: 100%;
+}
+.navigation > li {
+	display: block;
+}
+.navigation > li a {
+	color: #444;
+	display: block;
+	font-family: 'AgencyFB-Reg';
+	font-size: 60px;
+	padding: 5px 20px;
+}
+.navigation > li a:hover {
+	color: #000;
+}
+.close-wrap {
+	background: #fafafa none repeat scroll 0 0;
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 6px;
+}
+/* 8. All Hack
+***************************************************************/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+}
+/* 9. Font Icons
+***************************************************************/
